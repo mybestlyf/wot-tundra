@@ -205,6 +205,8 @@ WOTCheater::queryCheatStatus()
         else
         {
             ::CloseHandle(m_hTankProcess);
+			m_newFlags = m_flags; // probe to restore state
+			m_flags = 0;
             m_hTankProcess = NULL;
         }
     }

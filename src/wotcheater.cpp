@@ -100,14 +100,14 @@ void
 WOTCheater::setTrunksTundra()
 {
     std::vector<unsigned char> premiumState;
-    premiumState.push_back(0);
-    premiumState.push_back(0);
-    premiumState.push_back(0);
-    premiumState.push_back(1);
-    premiumState.push_back(0);
-    premiumState.push_back(1);
-    premiumState.push_back(0);
-    premiumState.push_back(0);
+	premiumState.push_back(1);
+	premiumState.push_back(0);
+	premiumState.push_back(1);
+	premiumState.push_back(0);
+	premiumState.push_back(0);
+	premiumState.push_back(0);
+	premiumState.push_back(0);
+	premiumState.push_back(0);
     updateTundraState(premiumState);
 }
 

@@ -16,59 +16,94 @@ unsigned char  * getTundraBase(unsigned char *memory, unsigned int length)
 {
     // WOTDrawManager object
 
-    //.text:0100C140                 push    ebp
-    //.text:0100C141                 mov     ebp, esp
-    //.text:0100C143                 sub     esp, 14h
-    //.text:0100C146                 cmp     byte_1FCEE80, 0
-    //.text:0100C14D                 push    esi
+	//.text:0150E141                   mov     dword ptr[esi + 28h], 7F7FFFFFh
+	//.text : 0150E148                 mov     dword ptr[esi + 2Ch], 7F7FFFFFh
+	//.text : 0150E14F                 mov     dword ptr[esi + 30h], 7F7FFFFFh
+	//.text : 0150E156                 mov     dword ptr[esi + 1Ch], 0
+	//.text : 0150E15D                 mov     dword ptr[esi + 20h], 0
+	//.text : 0150E164                 mov     dword ptr[esi + 24h], 0
+	//.text : 0150E16B                 mov     dword ptr[esi + 34h], 0FF7FFFFFh
+	//.text : 0150E172                 mov     dword ptr[esi + 38h], 0FF7FFFFFh
+	//.text : 0150E179                 mov     dword ptr[esi + 3Ch], 0FF7FFFFFh
+	//.text : 0150E180                 mov     dword ptr[esi + 40h], 0
+	//.text : 0150E187                 mov     dword ptr[esi + 44h], 0
+	//.text : 0150E18E                 mov     eax, esi
+	//.text : 0150E190                 mov     byte_1E74FA8, 0
+
 
     // ...
 
-    //  byte_1FCEE80                 db 1                    ; DATA XREF: sub_1009730:loc_1009756r
-    //.data:01FCEE80                                         ; sub_100C140+6r
-    //.data:01FCEE81 byte_1FCEE81    db 1                    ; DATA XREF: sub_1009730:loc_10097DBr
-    //.data:01FCEE81                                         ; sub_100C2C0+6r
-    //.data:01FCEE82 byte_1FCEE82    db 1                    ; DATA XREF: sub_FF9AA0+1Dr
-    //.data:01FCEE82                                         ; sub_1009730:loc_1009902r ...
-    //.data:01FCEE83 byte_1FCEE83    db 1                    ; DATA XREF: sub_FF9AA0+72r
-    //.data:01FCEE83                                         ; sub_FFA060+AFr ...
-    //.data:01FCEE84 byte_1FCEE84    db 1                    ; DATA XREF: sub_1009710r
-    //.data:01FCEE85 byte_1FCEE85    db 1                    ; DATA XREF: sub_FF9AA0+10r
-    //.data:01FCEE85                                         ; sub_FFB6A0+4r ...
-    //.data:01FCEE86                 db 1
-    //.data:01FCEE87 byte_1FCEE87    db 1                    ; DATA XREF: .text:0067F7C6w
-    //.data:01FCEE87                                         ; sub_67F7D0+47w ...
-    //.data:01FCEE88 dword_1FCEE88   dd 43C80000h            ; DATA XREF: sub_FFA380+1E9r
-    //.data:01FCEE88                                         ; sub_FFBBB0+2A8r ...
-    //.data:01FCEE8C dword_1FCEE8C   dd 3F800000h            ; DATA XREF: sub_FFCFA0+4r
-    //.data:01FCEE8C                                         ; sub_FFCFA0+19w
-    //.data:01FCEE90 dword_1FCEE90   dd 0C0000000h           ; DATA XREF: sub_FF8DC0+183r
-    //.data:01FCEE90                                         ; sub_FFBBB0+30Er ...
-    //.data:01FCEE94 dword_1FCEE94   dd 42480000h            ; DATA XREF: sub_FF8DC0+2DBr
-    //.data:01FCEE94                                         ; sub_FFBBB0+371r ...
-    //.data:01FCEE98 dword_1FCEE98   dd 43960000h            ; DATA XREF: sub_FF8DC0+301r
-    //.data:01FCEE98                                         ; sub_FFBBB0+3E0r ...
-    //.data:01FCEE9C dword_1FCEE9C   dd 43020000h            ; DATA XREF: sub_FF8DC0+3B7r
-    //.data:01FCEE9C                                         ; sub_FFBBB0+452r ...
-    //.data:01FCEEA0 dword_1FCEEA0   dd 3F800000h            ; DATA XREF: sub_FF8DC0+3C7r
-    //.data:01FCEEA0                                         ; sub_FFBBB0+4C4r ...
-    //.data:01FCEEA4 a333?           db '=¦¦>333?',0         ; DATA XREF: sub_FF8DC0+513o
-    //.data:01FCEEA4                                         ; sub_FF8DC0+522r ...
-    //
+	//.data:01E74FA8 byte_1E74FA8    db 1                    
+	//.data:01E74FA8                                         
+	//.data:01E74FA9 byte_1E74FA9    db 1                    
+	//.data:01E74FA9                                         
+	//.data:01E74FAA byte_1E74FAA    db 1                    
+	//.data:01E74FAA                                         
+	//.data:01E74FAB byte_1E74FAB    db 1                    
+	//.data:01E74FAB                                         
+	//.data:01E74FAC byte_1E74FAC    db 1                    
+	//.data:01E74FAC                                         
+	//.data:01E74FAD byte_1E74FAD    db 1                    
+	//.data:01E74FAD                                         
+	//.data:01E74FAE byte_1E74FAE    db 1                    
+	//.data:01E74FAE                                         
+	//.data:01E74FAF byte_1E74FAF    db 1                    
+	//.data:01E74FAF                                         
+	//.data:01E74FB0 byte_1E74FB0    db 1                    
+	//.data:01E74FB1 byte_1E74FB1    db 1                    
+	//.data:01E74FB1                                         
+	//.data:01E74FB2                 db    1
+	//.data:01E74FB3                 db    0
+	//.data:01E74FB4 dword_1E74FB4   dd 43C80000h            
+	//.data:01E74FB4                                         
+	//.data:01E74FB8 dword_1E74FB8   dd 3F800000h            
+
 
     int step = 2;
 
-    for (unsigned int i=0;i<length - 10;++i)
+    for (unsigned int i=0;i<length - 40;++i)
     {
+
+		// C7 46 ?? FF FF 7F FF C7 46 ?? FF FF 7F FF C7 46 ?? FF FF 7F FF C7 46 ?? 00 00 00 00 C7 46 ?? 00 00 00 00 8B C6 C6 05 A8 <address>
+
+
         unsigned char *pMemory = memory + i;
-        if (*(pMemory + 0)==0x55 && *(pMemory + 1)==0x8B && *(pMemory + 2)==0xEC && *(pMemory + 3)==0x83 && *(pMemory + 4)==0xec && *(pMemory + 5)==0x14 && *(pMemory + 6)==0x80 && *(pMemory + 7)==0x3d && *(pMemory + 12)==0x00)
+        if (*(pMemory + 0)==0xC7 
+			&& *(pMemory + 1)==0x46 
+			&& *(pMemory + 3)==0xFF 
+			&& *(pMemory + 4)==0xFF 
+			&& *(pMemory + 5)==0x7F
+			&& *(pMemory + 6) == 0xFF			
+			&& *(pMemory + 7) == 0xC7
+			&& *(pMemory + 8) == 0x46
+			&& *(pMemory + 10) == 0xFF
+			&& *(pMemory + 11) == 0xFF
+			&& *(pMemory + 12) == 0x7F
+			&& *(pMemory + 13) == 0xFF
+			&& *(pMemory + 14) == 0xC7
+			&& *(pMemory + 15) == 0x46
+			&& *(pMemory + 17) == 0xFF
+			&& *(pMemory + 18) == 0xFF
+			&& *(pMemory + 19) == 0x7F
+			&& *(pMemory + 20) == 0xFF
+			&& *(pMemory + 21) == 0xC7
+			&& *(pMemory + 22) == 0x46
+			&& *(pMemory + 24) == 0x00
+			&& *(pMemory + 25) == 0x00
+			&& *(pMemory + 26) == 0x00
+			&& *(pMemory + 27) == 0x00
+			&& *(pMemory + 28) == 0xC7
+			&& *(pMemory + 29) == 0x46
+			&& *(pMemory + 31) == 0x00
+			&& *(pMemory + 32) == 0x00
+			&& *(pMemory + 33) == 0x00
+			&& *(pMemory + 34) == 0x00
+			&& *(pMemory + 35) == 0x8b
+			&& *(pMemory + 36) == 0xc6
+			&& *(pMemory + 37) == 0xc6
+			)
         {
-            if (--step!=0)
-            {
-                 i += 16;
-                continue;
-            }
-            return *(unsigned char  **)(memory + i + 8) - 5;
+            return *(unsigned char  **)(pMemory + 39) + 2;
         }
     }
 
@@ -141,7 +176,7 @@ bool wotEuristic(HANDLE hProcess, unsigned char * & tundraBase, unsigned char * 
     ULONG err = ::GetLastError();
     ::CloseHandle(hFile);
 
-    tundraBase = getTundraBase(&binaryContent.front(), binaryContent.size());
+	tundraBase = (unsigned char *)getTundraBase(&binaryContent.front(), binaryContent.size()); // 0x01E74FAA
     sniperBase = getSniperBase(&binaryContent.front(), binaryContent.size());
 
     return true;
